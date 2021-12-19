@@ -1,0 +1,411 @@
+// LARGE 
+@media screen and(min-width: 1200px) {
+    
+}
+
+// DESCTOP
+@media screen and(max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .title__text {
+        font-size: 50px;
+    }
+
+    .header {
+        &__logo {
+            &-png {
+                width: 120px;
+            }
+            &__text {
+                font-size: 45px;
+                line-height: 40px;
+            }
+            &__sub-text {
+                bottom: -20px;
+                font-size: 12px;
+            }
+        }
+        &-item {
+    
+            &__link {
+                font-size: 20px;
+            }
+        }
+        &__btn {
+            width: 150px;
+        }
+    }
+    // End header
+    
+.nominations {
+    &-sup {
+        &-right {
+            width: 50%;
+            font-size: 25px;
+        }
+    }
+
+    &-item {
+        font-size: 24px;
+    }
+
+    &-list {
+        margin-left: 20px;
+    }
+    &-list__sub-text {
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+}
+// End nominations
+
+  
+.stages {
+    .title__text {
+        color: var(--cyan);
+        width: 50%;
+        margin-left: auto;
+    }
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    &-info {
+        width: 50%;
+        &__text {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+// End stages
+
+.toVote {
+    padding: 150px 0 40px 0;
+
+    &-info {
+        &__text {
+            font-size: 28px;
+        }
+
+        &__link {
+            font-size: 30px;
+        }
+    }
+
+}
+// End toVote
+
+.footer {
+
+    &__logo {
+        width: 120px;
+    }
+
+    &-list {
+        &__link {
+            font-size: 22px;
+
+            &:hover {
+                color: var(--yellow);
+            }
+        }
+
+        &__btn {
+            width: 150px;
+        }
+    }
+
+    &-contact {
+        &__link {
+           .contact {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+        }
+    }
+}
+}
+// End footer
+}
+
+// TABLET
+@media screen and(max-width: 1024px) {
+    .title__text {
+        font-size: 40px;
+    }
+
+    .header {
+        &-item {
+            display: none;
+        }
+        .burger-btn {
+            display: block;
+        }
+    }
+
+    .nominations {
+        margin-top: 100px;
+        &-sup {
+            justify-content: center;
+            flex-direction: column-reverse;
+    
+            &-star-photo {
+                width: 50%;
+            }
+            &-right {
+                width: 100%;
+                font-size: 24px;
+                &__text {
+                    line-height: 40px;
+                    text-align: justify;
+                }
+                &__img {
+                    margin-top: 40px;
+                    width: 40%;
+                }
+            }
+        }
+    
+        &-item {
+            font-size: 24px;
+        }
+    
+        &-list {
+            margin-left: 20px;
+    
+            li {
+                margin-bottom: 15px;
+    
+                .small__star {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &-list__sub-text {
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    // End nominations
+
+    .leaders {
+    
+        &-card {
+            width: 47.5%;
+            margin-bottom: 20px;
+    
+            &__text {
+                margin-top: 20px;
+                width: 75%;
+            }
+            &__sub-text {
+                margin-top: 15px;
+            }
+        }
+    }
+    // End leaders
+    
+.stages {
+    .title__text {
+        width: 100%;
+    }
+    &-item {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-info {
+        width: 100%;
+        &__text {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+    }
+    &-star__img {
+        margin-top: 20px;
+    }
+
+}
+// End stages
+.toVote {
+
+    &-info {
+        width: 50%;
+        &__text {
+            font-size: 26px;
+        }
+    }
+    &-photo__img {
+        width: 75%;
+    }
+
+}
+// End toVote
+}
+
+@media screen and(max-width: 768px) {
+    .nominations {
+        .title__text {
+            margin-bottom: 25px;
+        }
+        &-sup {
+            &-star-photo {
+                width: 100%;
+            }
+            &-right__img {
+                width: 75%;
+                margin-bottom: 25px;
+            }
+
+        }
+        &-item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    // End nominations
+
+    .footer {
+    
+        &-item {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    
+        &-right {
+            width: 100%;
+        }
+    
+        &-list {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            li {
+                margin-bottom: 15px;
+            }
+    
+            &__btn {
+                margin-left: 0;
+            }
+        }
+    }
+    // End footer
+}
+
+// MOBILE
+@media screen and(max-width: 576px) {
+    .header {
+        &__logo {
+            &-png {
+                width: 100px;
+            }
+            &__text {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            &__sub-text {
+               display: none;
+            }
+        }
+        .mobile-menu {
+            // width: 100%;
+            // right: -50%;
+        }
+    }
+    // End header
+    .nominations {
+        overflow: hidden;
+        &-sup {
+            &-star-photo {
+                width: 100%;
+                margin-left: -75px;
+            }
+            &-right__img {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+        }
+        &-item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    // End nominations
+    
+
+    .leaders {
+        &-card {
+            width: 100%;
+        }  
+    }
+    // End leaders
+
+    .stages {
+        overflow-x: hidden;
+        &-star__img {
+            width: 100%;
+        }
+    
+    }
+    // End stages
+    
+    
+.toVote {
+    padding: 0;
+    margin-top: 100px;
+    &-item {
+        flex-direction: column;
+
+        .title__text {
+            margin: 0;
+            color: var(--cyan);
+        }
+    }
+
+    &-info {
+        width: 100%;
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+    &-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-photo__img {
+        width: 100%;
+    }
+
+}
+// End toVote
+
+.footer {
+    padding-bottom: 50px;
+    &__logo {
+        width: 90px;
+    }
+}
+// End footer
+
+}
+
+@media screen and(max-width: 420px) {
+    
+}
